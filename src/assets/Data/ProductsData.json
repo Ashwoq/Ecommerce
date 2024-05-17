@@ -1,0 +1,400 @@
+{
+  "fourBoxes": {
+    "fourBox1": {
+      "title": "Revamp your home in style",
+      "endTitle": "End of season sale",
+      "items": [
+        {
+          "label": "Cushion cover, bedsheets & more",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_furnishings_2._SY116_CB584596691_.jpg"
+        },
+        {
+          "label": "Figurines, vases and more",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_decor_1._SY116_CB584596691_.jpg"
+        },
+        {
+          "label": "Home storage",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_storage_1._SY116_CB584596691_.jpg"
+        },
+        {
+          "label": "Lightning solutions",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_lighting_2._SY116_CB584596691_.jpg"
+        }
+      ]
+    },
+    "fourBox2": {
+      "title": "Up to 60% off | Styles for men",
+      "endTitle": "Explore all",
+      "items": [
+        {
+          "label": "Clothing",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg"
+        },
+        {
+          "label": "Footwear",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-186-116._SY116_CB636110853_.jpg"
+        },
+        {
+          "label": "Watches",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg"
+        },
+        {
+          "label": "bags & Wallets",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg"
+        }
+      ]
+    },
+    "fourBox3": {
+      "title": "Appliances | up to 55% off",
+      "endTitle": "See more",
+      "items": [
+        {
+          "label": "Air conditioners",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
+        },
+        {
+          "label": "Refrigerators",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
+        },
+        {
+          "label": "Microwaves",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
+        },
+        {
+          "label": "Washing machines",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
+        }
+      ]
+    },
+    "fourBox4": {
+      "title": "Up to 75% off | Headphones",
+      "endTitle": "See all offers",
+      "items": [
+        {
+          "label": "Up to 75% off | boAt",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg"
+        },
+        {
+          "label": "Up to 75% off | boult",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boult_Desktop_Qc_1x._SY116_CB577919562_.jpg"
+        },
+        {
+          "label": "Up to 75% off | Noise",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Noise_Desktop_Qc_1x._SY116_CB577919562_.jpg"
+        },
+        {
+          "label": "Up to 75% off | Zebronics",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Zebronics_Desktop_Qc_1x._SY116_CB577919562_.jpg"
+        }
+      ]
+    },
+    "fourBox5": {
+      "title": "Starting ₹99 | All your home improvement needs",
+      "endTitle": "Explore all",
+      "items": [
+        {
+          "label": "Spin mops, wipes & more",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_4._SY116_CB600489960_.jpg"
+        },
+        {
+          "label": "Bathroom hardware & accessories",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_3._SY116_CB600489960_.jpg"
+        },
+        {
+          "label": "Hammers, screwdrivers & more",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_7._SY116_CB600489960_.jpg"
+        },
+        {
+          "label": "Extension boards, plugs & more",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_5._SY116_CB600489960_.jpg"
+        }
+      ]
+    },
+    "fourBox6": {
+      "title": "Up to 60% off | Styles for women",
+      "endTitle": "End of season sale",
+      "items": [
+        {
+          "label": "Women's Clothing",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-186-116._SY116_CB636048992_.jpg"
+        },
+        {
+          "label": "Footwear+Handbags",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-186-116._SY116_CB636048992_.jpg"
+        },
+        {
+          "label": "Watches",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-186-116._SY116_CB636048992_.jpg"
+        },
+        {
+          "label": "Fashion jewellery",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-186-116._SY116_CB636048992_.jpg"
+        }
+      ]
+    },
+    "fourBox7": {
+      "title": "Delight your little one | Amazon Brands & more",
+      "endTitle": "See more",
+      "items": [
+        {
+          "label": "Starting ₹199 | Baby essentials",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/QC_186x116_1._SY116_CB595777477_.jpg"
+        },
+        {
+          "label": "Starting ₹179 | Soft toys",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/1xDesktopQuadcardw_title-Card_3._SY116_CB572041871_.jpg"
+        },
+        {
+          "label": "Starting ₹219 | Indoor games",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_186x116_6._SY116_CB585042283_.jpg"
+        },
+        {
+          "label": "Starting ₹379 | Outdoor games",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_186x116_7._SY116_CB585040546_.jpg"
+        }
+      ]
+    },
+    "fourBox8": {
+      "title": "Automotive essentials | Up to 60% off",
+      "endTitle": "See more",
+      "items": [
+        {
+          "label": "Cleaning accessories",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg"
+        },
+        {
+          "label": "Tyre & rim care",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg"
+        },
+        {
+          "label": "Helmets",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg"
+        },
+        {
+          "label": "Vacuum cleaner",
+          "imgTag": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg"
+        }
+      ]
+    }
+  },
+  "mobilePhones": [
+    {
+      "title": "Realme Narzo 60x 5G",
+      "description": "Moonstone Green 6GB RAM 128GB ROM",
+      "sellerName": "Realme",
+      "sellerCompany": "Realme Official",
+      "mrp": "₹11,499.00",
+      "price": 14999.0,
+      "qty": 1,
+      "discount": "23%",
+      "ratings": 3,
+      "imgSRC": "https://m.media-amazon.com/images/I/41tSQSq1xJL._AC_SY200_.jpg"
+    },
+    {
+      "title": "Realme Narzo 60 5G",
+      "description": "Sunkissed leather 6GB RAM 128GB ROM",
+      "sellerName": "Realme",
+      "sellerCompany": "Realme Official",
+      "mrp": "₹14,999.00",
+      "price": 19999.0,
+      "qty": 1,
+      "discount": "25%",
+      "ratings": 2,
+      "imgSRC": "https://m.media-amazon.com/images/I/41snmTn9mrL._AC_SY200_.jpg"
+    },
+    {
+      "title": "Redmi 12 5G",
+      "description": "(Stealth Black, 6GB RAM, 128GB Storage) | MTK Dimensity 6080 5G | 7.6mm, Slimmest Note Ever",
+      "sellerName": "Redmi",
+      "sellerCompany": "Xiaomi Official",
+      "mrp": "₹5,498.00",
+      "price": 9999.0,
+      "qty": 1,
+      "discount": "45%",
+      "ratings": 5,
+      "imgSRC": "https://m.media-amazon.com/images/I/41GsqdiCvOL._AC_SY200_.jpg"
+    },
+    {
+      "title": "Redmi 13C",
+      "description": "Jade Black 6GB RAM 128GB ROM",
+      "sellerName": "Redmi",
+      "sellerCompany": "Xiaomi Official",
+      "mrp": "₹12,499.00",
+      "price": 15999.0,
+      "qty": 1,
+      "discount": "22%",
+      "ratings": 1,
+      "imgSRC": "https://m.media-amazon.com/images/I/411iWoJEJjL._AC_SY200_.jpg"
+    },
+    {
+      "title": "Realme Narzo N53",
+      "description": "(Feather Gold, 4GB+64GB) 33W Segment Fastest Charging | Slim Smartphone | 90 Hz Smooth Display",
+      "sellerName": "Realme",
+      "sellerCompany": "Realme Official",
+      "mrp": "₹7,499.00",
+      "price": 10999.0,
+      "qty": 1,
+      "discount": "32%",
+      "ratings": 3,
+      "imgSRC": "https://m.media-amazon.com/images/I/41dEcQR7UnL._AC_SY200_.jpg"
+    },
+    {
+      "title": "IQOO Z6 Lite",
+      "description": "(Norway Blue, 6GB RAM, 128GB Storage) | Ultra Bright AMOLED Display | Snapdragon 695 5G 6nm Processor | 64 MP OIS Ultra Stable Camera | 44WFlashCharge",
+      "sellerName": "IQOO",
+      "sellerCompany": "VIVO",
+      "mrp": "₹11,999.00",
+      "price": 19999.0,
+      "qty": 1,
+      "discount": "40%",
+      "ratings": 2,
+      "imgSRC": "https://m.media-amazon.com/images/I/4105IiC5tDL._AC_SY200_.jpg"
+    },
+    {
+      "title": "IQOO Neo 7 Pro",
+      "description": "(Fearless Flame, 12Gb Ram, 256Gb Storage) | Snapdragon 8+ Gen 1 | Independent Gaming Chip | Flagship 50Mp Ois Camera | Premium Leather Design, Orange",
+      "sellerName": "IQOO",
+      "sellerCompany": "VIVO",
+      "mrp": "₹33,999.00",
+      "price": 42999.0,
+      "qty": 1,
+      "discount": "21%",
+      "ratings": 4,
+      "imgSRC": "https://m.media-amazon.com/images/I/51o13K4h3-L._AC_SY200_.jpg"
+    },
+    {
+      "title": "Poco C51",
+      "description": "(Royal Blue, 6GB RAM, 128GB Storage)",
+      "sellerName": "POCO",
+      "sellerCompany": "Redmi Official",
+      "mrp": "₹5,498.00",
+      "price": 9999.0,
+      "qty": 1,
+      "discount": "45%",
+      "ratings": 5,
+      "imgSRC": "https://m.media-amazon.com/images/I/41lois+jAAL._AC_SY200_.jpg"
+    },
+    {
+      "title": "Nokia G62 6GB",
+      "description": "Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Purple",
+      "sellerName": "Nokia",
+      "sellerCompany": "HMD",
+      "mrp": "₹12,499.00",
+      "price": 15999.0,
+      "qty": 1,
+      "discount": "22%",
+      "ratings": 3,
+      "imgSRC": "https://m.media-amazon.com/images/I/41-8D36eA5L._AC_SY200_.jpg"
+    }
+  ],
+  "homeAppliances": [
+    {
+      "title": "Haier 190 L 4 Star",
+      "description": "Direct Cool Single Door Refrigerator Appliance (2023 Model, HED-204DS-P, Dazzle Steel)",
+      "sellerName": "Hair",
+      "sellerCompany": "Visit the Harier Store",
+      "mrp": "₹20,499.00",
+      "price": 14799.0,
+      "qty": 1,
+      "discount": "23%",
+      "ratings": 4,
+      "imgSRC": "https://m.media-amazon.com/images/I/41M+c8X6RjL._SX679_.jpg"
+    },
+    {
+      "title": "Godrej 180 L 2 Star",
+      "description": "Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)",
+      "sellerName": "Godrej",
+      "sellerCompany": "Visit the Godrej Store",
+      "mrp": "₹17,999.00",
+      "price": 12999.0,
+      "qty": 1,
+      "discount": "28%",
+      "ratings": 2,
+      "imgSRC": "https://m.media-amazon.com/images/I/61jQdWXtqSL._SX679_.jpg"
+    },
+    {
+      "title": "Daikin 0.8 Ton 3 Star",
+      "description": "Fixed Speed Split AC (Copper, PM 2.5 Filter, 2022 Model, FTL28U, White)",
+      "sellerName": "Visit the Daikin store",
+      "sellerCompany": "Ddikin Official",
+      "mrp": "₹25,498.00",
+      "price": 37999.0,
+      "qty": 1,
+      "discount": "31%",
+      "ratings": 5,
+      "imgSRC": "https://m.media-amazon.com/images/I/41VjChncmcL._SX679_.jpg"
+    },
+    {
+      "title": "Haier 185 L 2 Star ",
+      "description": "Direct Cool Single Door Refrigerator Appliance (2023 Model, HED-19TGG-N, Holyleaf Glass)",
+      "sellerName": "Visit the Haier Store",
+      "sellerCompany": "Haier Official",
+      "mrp": "₹20,499.00",
+      "price": 14999.0,
+      "qty": 1,
+      "discount": "22%",
+      "ratings": 1,
+      "imgSRC": "https://m.media-amazon.com/images/I/81tRMU-PRHL._SX679_.jpg"
+    },
+    {
+      "title": "Whirlpool 7 Kg 5 Star",
+      "description": "Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 7.0 GENX, Grey, Hard Water Wash, ZPF Technology)",
+      "sellerName": "Vivis the Whirpool Store",
+      "sellerCompany": "Whirpool Dealer",
+      "mrp": "₹18,499.00",
+      "price": 14999.0,
+      "qty": 1,
+      "discount": "21%",
+      "ratings": 3,
+      "imgSRC": "https://m.media-amazon.com/images/I/61iQRax3uyL._SY741_.jpg"
+    },
+    {
+      "title": "Voltas Beko 28 L",
+      "description": "Convection Microwave Oven, 5 power levels (MC28BD, Black)",
+      "sellerName": "Voltas Beko Store",
+      "sellerCompany": "xyz Company",
+      "mrp": "₹19,999.00",
+      "price": 10799.0,
+      "qty": 1,
+      "discount": "46%",
+      "ratings": 2,
+      "imgSRC": "https://m.media-amazon.com/images/I/71JuTDo0BJL._SX679_.jpg"
+    },
+    {
+      "title": "Elica 60 cm 1200",
+      "description": "m3/hr Filterless Autoclean Kitchen Chimney with 15 Years Warranty (EFL-S601 HAC VMS, Touch + Motion Sensor Control, Black)",
+      "sellerName": "Visit the ELica Store",
+      "sellerCompany": "Elica Official",
+      "mrp": "₹33,999.00",
+      "price": 19999.0,
+      "qty": 1,
+      "discount": "43%",
+      "ratings": 4,
+      "imgSRC": "https://m.media-amazon.com/images/I/41r1Zb3zraL._SX679_.jpg"
+    },
+    {
+      "title": "Bosch 8 kg 5 Star ",
+      "description": "Fully-Automatic Front Loading Washing Machine (WAJ28262IN, Silver, AI active water plus, In-Built Heater)",
+      "sellerName": "Visit the Bosh Store",
+      "sellerCompany": "Bosch Offi",
+      "mrp": "₹55,498.00",
+      "price": 33900.0,
+      "qty": 1,
+      "discount": "40%",
+      "ratings": 5,
+      "imgSRC": "https://m.media-amazon.com/images/I/71bjqGwMISL._SX679_.jpg"
+    },
+    {
+      "title": "Faber 60 cm 1000 m³/HR",
+      "description": "Pyramid Kitchen Chimney || 12 year warranty on Motor|| Motor- 240 Watt (HOOD CLASS PRO PB BK LTW 60, Baffle Filters,Black)",
+      "sellerName": "Visit the Faber Store",
+      "sellerCompany": "faber Official",
+      "mrp": "₹24,499.00",
+      "price": 6790.0,
+      "qty": 1,
+      "discount": "73%",
+      "ratings": 3,
+      "imgSRC": "https://m.media-amazon.com/images/I/61gpftD1uWL._SX679_.jpg"
+    }
+  ]
+}

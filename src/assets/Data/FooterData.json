@@ -1,0 +1,56 @@
+[
+  {
+    "category": "Categories",
+    "subcategories": ["Running Shoe", "Gym Shoe", "Yoga Shoe", "Sports Shoe"]
+  },
+  {
+    "category": "Business",
+    "subcategories": [
+      "Company Profile",
+      "Social Responsibility",
+      "Brand Kit",
+      "Media"
+    ]
+  },
+  {
+    "category": "About",
+    "subcategories": [
+      "Board of Directors",
+      "Company Profile",
+      "Careers",
+      "Numbers Speak"
+    ]
+  },
+  {
+    "category": "Useful Links",
+    "subcategories": ["Return Policies", "Announcements", "Have Issues?"]
+  },
+  {
+    "communication": "Follow Us",
+    "communicationLinks": [
+      {
+        "comName": "Facebook",
+        "comImgSVG": "src/assets/SVG/facebook.svg",
+        "comLinks": "https://m.facebook.com/"
+      },
+      {
+        "comName": "Instagram",
+        "comImgSVG": "src/assets/SVG/insta.svg",
+        "comLinks": "https://m.instagram.com/"
+      },
+      {
+        "comName": "LinkedIN",
+        "comImgSVG": "src/assets/SVG/linkedin.svg",
+        "comLinks": "https://www.linkedin.com/"
+      },
+      {
+        "comName": "Youtube",
+        "comImgSVG": "src/assets/SVG/youtube.svg",
+        "comLinks": "https://www.youtube.com/"
+      }
+    ]
+  },
+  {
+    "copyrightsDetails": "Copyrights @ 2024 Shoe Store | Credits"
+  }
+]

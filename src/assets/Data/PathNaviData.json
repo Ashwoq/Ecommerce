@@ -1,0 +1,128 @@
+{
+  "role1": [
+    {
+      "id": 1,
+      "value": "Summary Dashboard",
+      "path": "/studentSummary",
+      "icon": "src/assets/NavBarSvg/sum.svg"
+    },
+    {
+      "id": 2,
+      "value": "Attendance Tracking",
+      "path": "/studentAttendance",
+      "icon": "src/assets/NavBarSvg/att.svg"
+    },
+    {
+      "id": 3,
+      "value": "Behavioral Analytics",
+      "path": "/studentBehaviour",
+      "icon": "src/assets/DashHome/behMngt.svg"
+    },
+    {
+      "id": 4,
+      "value": "Assignment Overview",
+      "path": "/studentAssignment",
+      "icon": "src/assets/DashHome/examMngt.svg"
+    },
+    {
+      "id": 5,
+      "value": "Time Table",
+      "path": "/studentTimeTable",
+      "icon": "src/assets/NavBarSvg/timetable.svg"
+    },
+    {
+      "id": 6,
+      "value": "Result",
+      "path": "/studentResult",
+      "icon": "src/assets/DashHome/resMngt.svg"
+    },
+    {
+      "id": 7,
+      "value": "Exam Information",
+      "path": "/studentExamDash",
+      "icon": "src/assets/DashHome/assignMngt.svg"
+    }
+  ],
+  "role2": [
+    {
+      "id": 1,
+      "value": "Student List",
+      "path": "/studentList",
+      "icon": "src/assets/DashHome/assignMngt.svg"
+    },
+    {
+      "id": 2,
+      "value": "Attendence Summary",
+      "path": "/studentAttendenceSummary",
+      "icon": "src/assets/NavBarSvg/att.svg"
+    },
+    {
+      "id": 3,
+      "value": "Assignment Creation",
+      "path": "/assignmentCreation",
+      "icon": "src/assets/DashHome/examMngt.svg"
+    },
+    {
+      "id": 4,
+      "value": "Behaviour Creation",
+      "path": "/behaviourCreation",
+      "icon": "src/assets/DashHome/behMngt.svg"
+    },
+    {
+      "id": 5,
+      "value": "Exam Summary",
+      "path": "/teacherSummary",
+      "icon": "src/assets/NavBarSvg/timetable.svg"
+    },
+    {
+      "id": 6,
+      "value": "Attendance Creation",
+      "path": "/attendanceCreation",
+      "icon": "src/assets/DashHome/teachAttMan.svg"
+    },
+    {
+      "id": 7,
+      "value": "Student Result",
+      "path": "/ResultEditable",
+      "icon": "src/assets/NavBarSvg/assign.svg"
+    }
+  ],
+  "role3": [
+    {
+      "id": 1,
+      "value": "Student List",
+      "path": "/PrincipleStdList",
+      "icon": "src/assets/DashHome/assignMngt.svg"
+    },
+    {
+      "id": 2,
+      "value": "Attendance",
+      "path": "/AdminStdAttendance",
+      "icon": "src/assets/NavBarSvg/att.svg"
+    },
+    {
+      "id": 3,
+      "value": "Assignment",
+      "path": "/PrincipleAssignmentSummary",
+      "icon": "src/assets/DashHome/examMngt.svg"
+    },
+    {
+      "id": 4,
+      "value": "Behaviour Analyst",
+      "path": "/PrincipleBehaviourAnalyst",
+      "icon": "src/assets/DashHome/behMngt.svg"
+    },
+    {
+      "id": 5,
+      "value": "Student Search / Filter",
+      "path": "/CompleteFilter",
+      "icon": "src/assets/DashHome/stdAttMngt.svg"
+    },
+    {
+      "id": 6,
+      "value": "Student Result",
+      "path": "/ResultEditable",
+      "icon": "src/assets/NavBarSvg/assign.svg"
+    }
+  ]
+}

@@ -96,6 +96,7 @@ const OrderHistory = () => {
                 orderTime,
                 orderAmount,
                 orderStatus,
+                paymentMethod,
                 created,
                 editedAt,
               } = order;
@@ -241,7 +242,10 @@ const OrderHistory = () => {
                         Amount Payed : {"₹ "}
                         {orderAmount}
                       </div>
-                      <div>Payment Method : Card </div>
+                      <div>
+                        Payment Method :
+                        {paymentMethod === undefined ? "Card" : paymentMethod}{" "}
+                      </div>
                       <div className="flex">
                         Order Status : &nbsp;
                         <div

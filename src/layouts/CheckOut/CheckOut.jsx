@@ -75,7 +75,7 @@ const CheckOut = () => {
   };
 
   return (
-    <div className="m-5">
+    <div className="">
       {/* <h2>Checkout</h2> */}
       {!clientSecret && <h3>{message}</h3>}
       <div className="">

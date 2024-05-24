@@ -197,4 +197,31 @@ button {
   background-position: 0% 0;
   box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
-/*  */
+/* animation */
+
+.animate-shake {
+  animation: shake 0.4s;
+}
+
+.animate-shake-delay {
+  animation: shake 0.4s;
+  animation-delay: 1s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-8px);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  75% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

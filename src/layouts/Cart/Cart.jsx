@@ -68,15 +68,10 @@ const Cart = () => {
     }
   };
   return (
-    <div className="bg-gray-900 ">
+    <div className="bg-gray-900 lg:text-base xs:text-xs">
       {/* <div className="my-2 text-2xl font-bold bg-pink-100">Shopping Bag</div> */}
       {cartItems.length === 0 ? (
         <div className="flex items-center justify-center h-[60vh] p-10 bg-gray-200">
-          {/* <div className="">
-            <div>Your cart is empty</div>
-            <Link to="/#products">Continue Shopping</Link>
-          </div> */}
-
           <div className="p-10 text-center bg-white rounded-lg shadow-lg lg:max-w-xl md:max-w-[26rem] xs:max-w-[18rem]">
             <h1 className="mb-4 font-bold lg:text-3xl md:text-2xl xs:text-xl">
               Your Shopping Cart is Empty
@@ -85,27 +80,11 @@ const Cart = () => {
               <Link to="/#products">Continue Shopping </Link>
             </div>
           </div>
-
-          {/* <div className="flex items-center justify-between w-full gap-2 p-2 mb-5 text-sm text-white bg-gray-500 rounded-xl ">
-            <Link to="/#products">
-              <div className="flex items-center transition-all cursor-pointer hover:scale-105 ">
-                <ChevronLeft size={22} /> Continue Shopping
-              </div>
-            </Link>
-            <button
-              onClick={() => clearCart()}
-              className="flex gap-1 p-1 px-2 text-white text-[12px] bg-red-500 
-                  hover:scale-105 transition-all
-                  rounded-md"
-            >
-              Clear Cart <CircleX size={17} />
-            </button>
-          </div> */}
         </div>
       ) : (
-        <div className="grid grid-cols-3 gap-8 p-8 bg-gray-200 cursor-default ">
-          <div className="col-span-2 bg-blue">
-            <div className="flex items-center justify-between w-full gap-2 p-2 mb-5 text-sm bg-white backdrop-blur-md rounded-xl ">
+        <div className="grid grid-cols-3 gap-8 bg-gray-200 cursor-default xs:p-4 lg:p-8 ">
+          <div className="lg:col-span-2 xs:col-span-3 bg-blue">
+            <div className="flex items-center justify-between w-full gap-2 p-2 mb-5 xs:text-[10px] lg:text-sm bg-white backdrop-blur-md rounded-xl ">
               <Link to="/#products">
                 {" "}
                 <div className="flex items-center transition-all cursor-pointer hover:scale-105 ">
@@ -114,7 +93,8 @@ const Cart = () => {
               </Link>
               <button
                 onClick={() => clearCart()}
-                className="flex gap-1 p-1 px-2 text-white text-[12px] bg-red-500 
+                className="flex gap-1 p-1 px-2 text-white
+                 xs:text-[10px] lg:text-[12px] bg-red-500 
                   hover:scale-105 transition-all
                   rounded-lg"
               >
@@ -127,12 +107,12 @@ const Cart = () => {
             "
             >
               <div className="flex justify-between my-2 font-bold bg-red">
-                <div className="w-[28%] text-xl text-center bg-red">
+                <div className="w-[28%] xs:text-sm lg:text-xl text-center bg-red">
                   Product
                 </div>
-                <div className="flex text-center w-[30%] px-5 bg-red justify-between">
+                <div className="flex text-center xs:w-[45%] lg:w-[30%] xs:px-2 lg:px-5 bg-red justify-between">
                   <div className="bg-blue w-[49%]">Quantity</div>
-                  <div className="mr-5 bg-blue">Price</div>
+                  <div className="xs:mr-0 lg:mr-5 bg-blue">Price</div>
                   <div className="bg-blue "></div>
                 </div>
               </div>
@@ -153,30 +133,30 @@ const Cart = () => {
                   <div key={id}>
                     <div className="grid justify-center w-full grid-cols-7 bg-red lg:gap-4 xs:gap-2 lg:p-2 xs:p-2 ">
                       <div className="flex items-center justify-center p-2 bg-gray-200 rounded-md lg:col-span-2 xs:col-span-2">
-                        <div className="relative p-2 px-3 text-xs text-white font-bold scale-[.80] bg-green-500 rounded-full bottom-24 right-[3.25rem]">
+                        <div className="relative xs:p-1 lg:p-2 xs:px-2 lg:px-3 xs:text-[9px] lg:text-xs text-white font-bold scale-[.80] bg-green-500 rounded-full lg:bottom-24 lg:right-[3.25rem] xs:bottom-24 xs:right-[1.25rem]">
                           {index + 1}
                         </div>
                         <img
-                          className="object-contain w-44 ml-[-2rem] mix-blend-darken"
+                          className="object-contain w-44 h-44 ml-[-2rem] mix-blend-darken"
                           src={imageURL}
                           alt={name}
                         />
                       </div>
                       <div className="col-span-2 my-auto bg-blue lg:col-span-3">
-                        <div className="font-semibold lg:text-xl xs:text-md">
+                        <div className="font-semibold lg:text-xl xs:text-[10px]">
                           {name}
                         </div>
-                        <div className="mt-1 text-sm">
+                        <div className="mt-1 xs:text-[9px] lg:text-sm">
                           {shortenText(desc, 50)}
                         </div>
                         <div className="lg:mt-2 xs:mt-0 lg:text-xs xs:text-[10px] text-[#007600] font-medium lg:leading-normal xs:leading-3">
                           In stock
                         </div>
-                        <div className="lg:text-xs lg:leading-normal xs:leading-3 xs:text-[10px] text-[#565959] font-medium">
+                        <div className="lg:text-xs lg:leading-normal xs:leading-3 xs:text-[9px] text-[#565959] font-medium">
                           Sold by
                           <span className="text-[#007185]"> {sellerName}</span>
                         </div>
-                        <div className="lg:text-xs lg:leading-normal xs:leading-3 xs:text-[10px] text-[#565959] font-medium">
+                        <div className="lg:text-xs lg:leading-normal xs:leading-3 xs:text-[9px] text-[#565959] font-medium">
                           Gift options available.
                           <span className="text-[#007185] lg:leading-normal xs:leading-3">
                             Learn more
@@ -186,28 +166,28 @@ const Cart = () => {
                       {/* {!hideButton && ( */}
                       <div className="flex items-center justify-center ">
                         <button
-                          className="p-1 px-3  bg-[#ffd28d] transition  hover:bg-[#f0c687] "
+                          className="p-1 xs:px-2 lg:px-3  bg-[#ffd28d] transition  hover:bg-[#f0c687] "
                           onClick={() => decreaseCart(cart)}
                         >
                           -
                         </button>
-                        <div className="p-1 px-3 bg-[#ffd28d] transition  hover:bg-[#f0c687] ">
+                        <div className="p-1 xs:px-2 lg:px-3 bg-[#ffd28d] transition  hover:bg-[#f0c687] ">
                           {cartQuantity}
                         </div>
 
                         <button
-                          className="p-1 px-3  bg-[#ffd28d] transition  hover:bg-[#f0c687] "
+                          className="p-1 xs:px-2 lg:px-3  bg-[#ffd28d] transition  hover:bg-[#f0c687] "
                           onClick={() => increaseCart(cart)}
                         >
                           +
                         </button>
                       </div>
                       {/* )} */}
-                      <div className="flex items-center justify-center font-semibold text-right bg-green lg:text-xl xs:text-md">
+                      <div className="flex items-center justify-center font-semibold text-right bg-green lg:text-xl xs:text-xs">
                         <small>₹</small>
                         {(price * cartQuantity).toFixed(2)}
                         <div
-                          className="mb-1 ml-2 text-red-500 transition-all cursor-pointer hover:scale-110"
+                          className="mb-1 ml-2 text-red-500 transition-all cursor-pointer lg:scale-100 xs:scale-75 hover:scale-110"
                           onClick={() => removeFromCart(cart)}
                         >
                           <Trash2 />
@@ -223,17 +203,17 @@ const Cart = () => {
             </div>
           </div>
           <div
-            className="p-2 h-max rounded-xl bg-white   
+            className="p-2 h-max rounded-xl lg:col-span-1 xs:col-span-3 bg-white   
 shadow-[0_8px_30px_rgb(0,0,0,0.12)]
           w-[100%]"
           >
             <div className="flex flex-col justify-between rounded-2xl">
               <div className="m-4 ">
-                <div className="mb-3 text-xl font-extrabold ">
+                <div className="mb-3 font-extrabold xs:text-sm lg:text-xl ">
                   Calculated Shipping
                 </div>
                 <div className=" text-[#008500] ">
-                  <div className="text-[#008500] text-xs font-medium">
+                  <div className="text-[#008500]  xs:text-[10px] lg:text-xs font-medium">
                     Congrats your order qualifies for a FREE Delivery.
                   </div>
                   <small className="flex items-center mt-1 ml-[-10px] text-black scale-95 ">
@@ -243,8 +223,10 @@ shadow-[0_8px_30px_rgb(0,0,0,0.12)]
                 </div>
               </div>
               <div className="p-3 m-2 mt-4 bg-[#ffd28d] rounded-2xl ">
-                <div className="mb-3 text-xl font-extrabold ">Cart Total</div>
-                <div className="grid justify-between grid-cols-2 my-2 text-base ">
+                <div className="mb-3 font-extrabold xs:text-sm lg:text-xl ">
+                  Cart Total
+                </div>
+                <div className="grid justify-between grid-cols-2 my-2 xs:text-xs lg:text-base ">
                   <div className="">Total Item </div>
                   <strong className="text-right">{cartTotalQuantity}</strong>
                   <div>Total Price </div>

@@ -23,13 +23,13 @@ const ProductItem = ({
 }) => {
   const dispatch = useDispatch();
 
-  const shortenText = (text, n) => {
-    if (text.length > n) {
-      const shortenedText = text.substring(0, n).concat("...");
-      return shortenedText;
-    }
-    return text;
-  };
+  // const shortenText = (text, n) => {
+  //   if (text.length > n) {
+  //     const shortenedText = text.substring(0, n).concat("...");
+  //     return shortenedText;
+  //   }
+  //   return text;
+  // };
 
   const addToCart = (product) => {
     dispatch(ADD_TO_CART(product));
@@ -67,7 +67,7 @@ const ProductItem = ({
             <Link to={`/product-details/${id}`}>
               <div className="flex items-center lg:col-span-1 xs:col-span-2 justify-center rounded-md bg-[#f1f1f1] mb-3 ">
                 <img
-                  className="object-contain w-44 h-44 mix-blend-darken"
+                  className="object-contain xs:w-20 xs:h-20 lg:w-44 lg:h-44 mix-blend-darken"
                   src={imageURL}
                   alt={name}
                 />
@@ -140,7 +140,7 @@ const ProductItem = ({
             </div>
             <div className="lg:p-5 xs:p-2 lg:col-span-4 xs:col-span-3 ">
               <div className="font-semibold lg:text-lg xs:text-sm">{name}</div>
-              <div className=" lg:leading-normal xs:leading-[14px] lg:text-base xs:text-xs lg:mt-[-8px] xs:mt-0">
+              <div className=" lg:leading-normal xs:leading-[14px] lg:text-base xs:text-[10px] lg:mt-[-8px] xs:mt-0">
                 {desc}
               </div>
               <div className="mt-1 lg:text-sm xs:text-[11px]">{sellerName}</div>

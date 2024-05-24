@@ -3,18 +3,27 @@ import { NavLink, Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { Inbox } from "lucide-react";
+import {
+  History,
+  Home,
+  Inbox,
+  MessageSquare,
+  ShoppingCart,
+  User,
+} from "lucide-react";
 import { Mail } from "lucide-react";
 import { Menu, ChevronLeft } from "lucide-react";
 import Header from "../Header/Header";
 import { useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectEmail } from "../../../redux/slice/authSlice";
 
 const NavBarNew = () => {
   const location = useLocation();
@@ -27,52 +36,70 @@ const NavBarNew = () => {
     setOpen(newOpen);
   };
 
+  const NavData = [
+    { path: "/", value: "Home", icon: Home },
+    { path: "/order-history", value: "Order History", icon: History },
+    { path: "/cart", value: "Cart", icon: ShoppingCart },
+    { path: "/contact", value: "Contact Us", icon: MessageSquare },
+  ];
+
+  const userEmail = useSelector(selectEmail);
+  const isAdmin = userEmail === "ashwoq00786@gmail.com";
+
+  if (isAdmin) {
+    NavData.push({
+      path: "/admin/adhome",
+      value: "Admin Dashboard",
+      icon: User,
+    });
+  }
+
   const DrawerList = (
     <Box
-      sx={{ width: 300 }}
+      sx={{ width: 350 }}
       className="h-full p-2 py-5 bg-white"
       role="presentation"
       onClick={toggleDrawer(false)}
     >
-      <div className="flex items-center justify-between px-2 py-1 mx-2 text-2xl font-bold bg-gray-300 rounded-xl">
+      <div className="flex items-center justify-between px-3 py-2 mx-2 text-xl font-bold bg-gray-300 rounded-xl">
         <div className="">E-Commerce</div>
         <button className="p-2 text-white bg-black rounded-full">
           <ChevronLeft />
         </button>
       </div>
       <List>
-        {["order-history", "cart", "contact"].map((text, index) => (
+        {NavData.map((navItem, index) => (
           <NavLink
+            key={index}
+            to={navItem.path}
             style={({ isActive }) => ({
               // color: isActive ? "white" : "blue",
               // transition: "0s",
             })}
-            to={text}
-            key={index}
           >
             <ListItem
-              key={text}
+              key={navItem.path}
               disablePadding
               sx={{
                 display: "block",
-                backgroundColor: isActived(text) ? "#757dff" : "",
+                backgroundColor: isActived(navItem.path) ? "#3383f6" : "ffffff",
+                color: isActived(navItem.path) ? "white" : "black",
               }}
               className="
-          flex
-          py-1
-          lg:my-4
-          md:my-2
-          xs:my-1
-          cursor-pointer
-          text-white
-          rounded-2xl
-          bg-gray-500
-          scale-[0.95]
-          transition-all
-          hover:bg-gray-700
-          hover:rounded-lg
-          hover:scale-[0.98]
-          hover:shadow-[rgba(0,_0,_0,_0.2)_0px_5px_30px]"
+              flex
+              py-1
+              lg:my-4
+              md:my-2
+              xs:my-1
+              cursor-pointer
+              text-black
+              rounded-2xl
+              scale-[0.95]
+              transition-all
+              hover:bg-blue-200
+              hover:rounded-lg
+              hover:scale-[0.98]
+              hover:shadow-[rgba(0,_0,_0,_0.2)_0px_5px_30px]"
             >
               <ListItemButton
                 sx={{
@@ -87,12 +114,11 @@ const NavBarNew = () => {
                     mr: open ? (window.innerWidth >= 1024 ? 3 : 1) : "auto",
                     justifyContent: "center",
                   }}
-                  // backgroundColor: isActived(text) ? "#ffffff" : "",
                 >
-                  {index % 2 === 0 ? <Inbox /> : <Mail />}
+                  <navItem.icon />
                 </ListItemIcon>
                 <ListItemText
-                  primary={text}
+                  primary={navItem.value}
                   sx={{
                     opacity: open ? 1 : 0,
                     ".MuiTypography-root": {
@@ -102,6 +128,9 @@ const NavBarNew = () => {
                 />
               </ListItemButton>
             </ListItem>
+            <div className="flex items-center justify-center">
+              <Divider className="w-[90%]" />
+            </div>
           </NavLink>
         ))}
       </List>
@@ -130,7 +159,9 @@ const NavBarNew = () => {
         <div className="">
           <Outlet />
         </div>
-        <div className="">{/* <Footer /> */}</div>
+        <div className="">
+          <Footer />
+        </div>
       </div>
     </div>
   );

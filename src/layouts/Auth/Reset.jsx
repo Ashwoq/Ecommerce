@@ -14,20 +14,32 @@ const Reset = () => {
   const location = useNavigate();
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [validated, setValidated] = useState(true);
+  const [validationMsg, setValidationMsg] = useState("");
+  const hasAt = email.includes("@");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsLoading(true);
-    sendPasswordResetEmail(auth, email)
-      .then(() => {
-        setIsLoading(false);
-        toast.success("Check your email for a reset link");
-        location("/login");
-      })
-      .catch((error) => {
-        setIsLoading(false);
-        toast.error(error.message);
-      });
+    if (email.length >= 8 && hasAt) {
+      setValidated(true);
+      setValidationMsg("Validated");
+      setIsLoading(true);
+      sendPasswordResetEmail(auth, email)
+        .then(() => {
+          setIsLoading(false);
+          toast.success("Check your email for a reset link");
+          location("/login");
+        })
+        .catch((error) => {
+          setIsLoading(false);
+          toast.error(error.message);
+        });
+    } else {
+      setValidated(false);
+      if (email.length < 8 || !hasAt) {
+        setValidationMsg("Invalid email id.");
+      }
+    }
   };
 
   return (
@@ -66,25 +78,47 @@ const Reset = () => {
               </div>
               <form
                 onSubmit={handleSubmit}
-                className="flex flex-col w-full gap-2 text-sm bg-red"
+                className="flex flex-col w-full gap-1 text-sm bg-red"
               >
                 <input
                   type="text"
-                  className="bg-white rounded-xl focus:outline-none py-2 pl-12 lg:h-[3rem] my-4 placeholder-slate-700"
+                  // className="bg-white rounded-xl focus:outline-none py-2 pl-12 lg:h-[3rem] my-4 placeholder-slate-700"
+                  className={`${
+                    validationMsg === "Invalid email id."
+                      ? "outline-red-500"
+                      : ""
+                  }
+                  bg-theme-purple50 outline-none rounded-xl py-2 pl-12 lg:h-[3rem] placeholder-slate-700
+                  `}
                   value={email}
                   autoComplete="email"
                   placeholder="example@gmail.com"
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <div
-                  className=" 
-               absolute lg:mt-[1.72rem] xs:mt-[1.3rem] ml-[.9rem]"
+                  className={`${
+                    validated ? "text-green-500" : "text-red-500"
+                  } text-[11px] pl-2 mb-1 pt-1`}
+                >
+                  {/* {validationMsg} */}
+                  {validationMsg === "Invalid email id." ? (
+                    validationMsg
+                  ) : (
+                    <div className="opacity-0 ">correct email id</div>
+                  )}
+                </div>
+                <div
+                  className={`${
+                    validationMsg === "Invalid email id."
+                      ? "text-red-500"
+                      : "text-black"
+                  }   absolute lg:mt-[0.8rem] xs:mt-[1.3rem] ml-[.9rem]`}
                 >
                   <UserRound className="scale-75" />
                 </div>
                 <button
                   type="submit"
-                  className={`block w-full p-3 px-5 rounded-2xl mb-3 font-bold text-white transition-all hover:scale-[1.04] text-sm ${"bg-theme-purple hover:bg-theme-purple600"}`}
+                  className={`block w-full p-3 px-5 rounded-2xl mb-4 font-bold text-white transition-all hover:scale-[1.04] text-sm ${"bg-theme-purple hover:bg-theme-purple600"}`}
                 >
                   Reset Password
                 </button>

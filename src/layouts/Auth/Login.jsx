@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { EyeOff, Eye, UserRound, Lock } from "lucide-react";
+import { EyeOff, Eye, UserRound, Lock, User } from "lucide-react";
 import login3 from "../../assets/Login/loginbg3.jpg";
 import vector from "../../assets/Login/vector.png";
 import "../../Global.css";
@@ -23,6 +23,8 @@ const Login = () => {
   const redirectUser = () => {
     if (previousURL.includes("cart")) {
       return location("/cart");
+    } else if (email === "ashwoq00786@gmail.com") {
+      return location("/admin/adhome");
     }
     location("/");
   };
@@ -77,18 +79,13 @@ const Login = () => {
         }}
       >
         <div
-          className="flex items-center justify-center rounded-3xl 
+          className="flex items-center justify-center rounded-3xl
       shadow-[0_8px_30px_rgb(0,0,0,0.15)]  backdrop-blur-sm bg-white/30
       w-[57%] h-[70%]"
         >
-          {/* <div
-          className="flex w-[50%] flex-col items-center 
-      shadow-[0_8px_30px_rgb(0,0,0,0.15)]  backdrop-blur-md bg-black/35 justify-center xs:p-7 
-      xs:shadow-[0_8px_30px_rgb(0,0,0,0.15)] rounded-3xl"
-        > */}
           <div
             // shadow-[0_8px_30px_rgb(0,0,0,0.15)]  backdrop-blur-md bg-white/35
-            className="lg:flex xs:hidden w-[50%] flex-col items-center 
+            className="lg:flex xs:hidden w-[50%] flex-col items-center
           justify-center p-5 rounded-t-none rounded-b-none
           rounded-3xl"
           >
@@ -103,16 +100,10 @@ const Login = () => {
           </div>
           <div
             className="lg:w-[45%] xs:w-full h-[85%]
-          rounded-3xl 
-          bg-theme-ppk   
+          rounded-3xl
+          bg-theme-ppk
           "
           >
-            {/* <div
-          className="w-[45%] h-[85%]
-          rounded-3xl 
-            backdrop-blur-md bg-red-400/15    
-          "
-        > */}
             <div
               className="flex flex-col items-center justify-center w-full h-full rounded-3xl p-7 "
               // shadow-[0_8px_30px_rgb(0,0,0,0.15)]
@@ -141,7 +132,7 @@ const Login = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <div
-                  className=" 
+                  className="
                absolute lg:mt-[1.72rem] xs:mt-[1.3rem] ml-[.9rem]"
                 >
                   <UserRound className="scale-75" />
@@ -156,7 +147,7 @@ const Login = () => {
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <div
-                  className="absolute xs:right-9 lg:right-14 scale-75 cursor-pointer lg:mt-[6.4rem] xs:mt-[5.4rem] 
+                  className="absolute xs:right-9 lg:right-14 scale-75 cursor-pointer lg:mt-[6.4rem] xs:mt-[5.4rem]
                   "
                 >
                   {showPassword ? (

@@ -127,7 +127,7 @@ const ViewProducts = () => {
 
   return (
     <div className="lg:text-base xs:text-[10px]">
-      <div className="p-2 px-4 mb-5 font-bold text-gray-100 xs:text-sm lg:text-2xl bg-green-300/50 w-max rounded-xl ">
+      <div className="p-2 px-4 mb-5 font-bold text-gray-100 bg-green-500 xs:text-sm lg:text-2xl w-max rounded-xl ">
         All Products
       </div>
       {/* <div className="mb-5 text-2xl font-bold"> All Products</div> */}
@@ -137,9 +137,9 @@ const ViewProducts = () => {
           <p>no products found</p>
         ) : (
           <div className="w-full p-2 px-3 bg-gray-200 rounded-xl">
-            <p>
-              <b>{filteredProducts.length}&nbsp;</b>products found
-            </p>
+            <div className="mb-3 text-lg font-bold ">
+              {filteredProducts.length}&nbsp;products found
+            </div>
             <Search
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -162,7 +162,7 @@ const ViewProducts = () => {
               return (
                 <div
                   key={id}
-                  className="flex w-full p-1 mb-3 bg-gray-300 rounded-xl"
+                  className="flex w-full p-1 mb-3 bg-gray-50 rounded-xl"
                 >
                   <div className="p-2 w-[5%]">{index + 1}</div>
                   <div className="grid w-full text-center xs:grid-cols-9 lg:grid-cols-12 ">

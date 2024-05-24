@@ -81,7 +81,7 @@ const Login = () => {
         <div
           className="flex items-center justify-center rounded-3xl
       shadow-[0_8px_30px_rgb(0,0,0,0.15)]  backdrop-blur-sm bg-white/30
-      w-[57%] h-[70%]"
+      xs:w-[90%] lg:w-[57%] h-[70%]"
         >
           <div
             // shadow-[0_8px_30px_rgb(0,0,0,0.15)]  backdrop-blur-md bg-white/35

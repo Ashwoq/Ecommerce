@@ -44,7 +44,7 @@ const ChangeOrderStatus = ({ order, id }) => {
     try {
       setDoc(doc(db, "orders", id), orderConfig);
       setIsLoading(false);
-      toast.success("Order Status Changed");
+      toast.success("Order Status Changed ");
 
       if (order.id === id) {
         setValues((prevValues) => ({

@@ -112,10 +112,10 @@ const Login3 = () => {
         <div
           className="flex items-center justify-center rounded-3xl
           text-white
-      w-[57%] h-[83%] py-1"
+      xs:w-[90%] lg:w-[57%] h-[83%] py-1"
         >
           <div
-            className="w-[50%] h-full rounded-3xl flex flex-col pb-5 backdrop-blur-xl bg-white/15 
+            className="xs:w-full lg:w-[50%] h-full rounded-3xl flex flex-col pb-5 backdrop-blur-xl bg-white/15 
             shadow-[0_8px_30px_rgb(0,0,0,0.12)] "
           >
             <div className="flex flex-col items-center justify-center w-full h-full p-8 rounded-3xl ">

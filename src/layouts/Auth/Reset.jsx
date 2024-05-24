@@ -56,7 +56,7 @@ const Reset = () => {
         <div
           className="flex items-center justify-center rounded-3xl 
       shadow-[0_8px_30px_rgb(0,0,0,0.15)]  backdrop-blur-sm bg-white/30
-      w-[45%] h-[60%]"
+      xs:w-[85%] lg:w-[45%] h-[60%]"
         >
           <div
             className="lg:w-[55%] xs:w-full h-[75%]
@@ -112,7 +112,7 @@ const Reset = () => {
                     validationMsg === "Invalid email id."
                       ? "text-red-500"
                       : "text-black"
-                  }   absolute lg:mt-[0.8rem] xs:mt-[1.3rem] ml-[.9rem]`}
+                  }   absolute lg:mt-[0.8rem] xs:mt-[.3rem] ml-[.9rem]`}
                 >
                   <UserRound className="scale-75" />
                 </div>

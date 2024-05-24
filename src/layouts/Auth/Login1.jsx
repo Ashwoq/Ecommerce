@@ -108,10 +108,10 @@ const Login1 = () => {
       <div className="flex items-center justify-center w-screen h-screen overflow-hidden cursor-default bg-gradient-to-r from-gray-100 to-gray-300 ">
         <div
           className="flex items-center justify-center rounded-3xl
-      w-[57%] h-[70%]"
+    xs:w-[90%] lg:w-[57%] h-[70%]"
         >
           <div
-            className="w-[48%] rounded-3xl
+            className="xs:w-full lg:w-[48%] rounded-3xl
 backdrop-blur-xl
  bg-white    
 shadow-[0_8px_30px_rgb(0,0,0,0.12)] 

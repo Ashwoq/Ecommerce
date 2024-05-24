@@ -95,9 +95,9 @@ const Signup1 = () => {
       <div className="flex items-center justify-center w-screen h-screen overflow-hidden cursor-default bg-gradient-to-r from-gray-100 to-gray-300 ">
         <div
           className="flex items-center justify-center rounded-3xl
-      w-[57%] h-[70%]"
+      xs:w-[85%] lg:w-[57%] h-[70%]"
         >
-          <div className="w-[48%] rounded-3xl backdrop-blur-xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] ">
+          <div className="xs:w-full lg:w-[48%] rounded-3xl backdrop-blur-xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] ">
             <div className="flex flex-col items-center justify-center w-full h-full p-8 rounded-3xl ">
               <div className="flex flex-col items-center justify-center gap-1 my-2">
                 <div className="text-2xl font-bold ">ECommerce</div>
@@ -140,7 +140,7 @@ const Signup1 = () => {
                       validationMsg === "Invalid email id."
                         ? "text-red-500"
                         : "text-black"
-                    }   absolute lg:mt-[0.8rem] xs:mt-[1.3rem] ml-[.9rem]`}
+                    }   absolute lg:mt-[0.8rem] xs:mt-[.3rem] ml-[.9rem]`}
                   >
                     <UserRound className="scale-75" />
                   </div>
@@ -183,7 +183,7 @@ const Signup1 = () => {
                       validated || validationMsg === "Invalid email id."
                         ? "text-black"
                         : "text-red-500"
-                    } text-[11px] absolute xs:right-9 lg:left-[21.75rem] scale-75 cursor-pointer lg:mt-[.7rem] xs:mt-[5.4rem]`}
+                    } text-[11px] absolute xs:right-9 lg:left-[21.75rem] scale-75 cursor-pointer lg:mt-[.7rem] xs:mt-[.4rem]`}
                   >
                     {showPassword ? (
                       <Eye onClick={toggleShowPassword} />
@@ -197,7 +197,7 @@ const Signup1 = () => {
                         ? "text-black"
                         : "text-red-500"
                     } flex
-               absolute lg:mt-[.7rem] xs:mt-[5.4rem] ml-[.9rem]`}
+               absolute lg:mt-[.7rem] xs:mt-[.3rem] ml-[.9rem]`}
                   >
                     <Lock className="scale-75" />
                   </div>
@@ -236,7 +236,7 @@ const Signup1 = () => {
                     validated || validationMsg === "Invalid email id."
                       ? "text-black"
                       : "text-red-500"
-                  } text-[11px] absolute xs:right-9 lg:left-[21.75rem] scale-75 cursor-pointer lg:mt-[10.5rem] xs:mt-[5.4rem]`}
+                  } text-[11px] absolute xs:right-9 lg:left-[21.75rem] scale-75 cursor-pointer lg:mt-[10.5rem] xs:mt-[8.6rem]`}
                 >
                   {showCPassword ? (
                     <Eye onClick={toggleShowCPassword} />
@@ -250,7 +250,7 @@ const Signup1 = () => {
                       ? "text-black"
                       : "text-red-500"
                   } flex
-               absolute lg:mt-[10.4rem] xs:mt-[5.rem] ml-[.9rem]`}
+               absolute lg:mt-[10.4rem] xs:mt-[8.5rem] ml-[.9rem]`}
                 >
                   <Lock className="scale-75" />
                 </div>

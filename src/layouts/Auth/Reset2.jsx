@@ -48,7 +48,7 @@ const Reset = () => {
       <div className="flex items-center justify-center w-screen h-screen overflow-hidden cursor-default bg-gradient-to-r from-gray-100 to-gray-300 ">
         <div
           className="flex items-center justify-center rounded-3xl
-     bg-blue-600 w-[57%] h-[78%] py-1"
+     bg-blue-600 xs:w-[85%] lg:w-[57%] h-[78%] py-1"
         >
           <div
             // shadow-[0_8px_30px_rgb(0,0,0,0.15)]  backdrop-blur-md bg-white/35
@@ -67,7 +67,7 @@ const Reset = () => {
               <img src={vector} alt="vector"></img>
             </div>
           </div>
-          <div className="w-[51%] h-full rounded-3xl backdrop-blur-xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] ">
+          <div className="xs:w-full lg:w-[51%] h-full rounded-3xl backdrop-blur-xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] ">
             <div className="flex flex-col items-center justify-center w-full h-full p-8 rounded-3xl ">
               <div className="flex flex-col items-center justify-center gap-1 my-10">
                 <div className="text-2xl font-bold ">ECommerce</div>
@@ -108,7 +108,7 @@ const Reset = () => {
                     validationMsg === "Invalid email id."
                       ? "text-red-500"
                       : "text-black"
-                  }   absolute lg:mt-[0.8rem] xs:mt-[1.3rem] ml-[.9rem]`}
+                  }   absolute lg:mt-[0.8rem] xs:mt-[.3rem] ml-[.9rem]`}
                 >
                   <UserRound className="scale-75" />
                 </div>

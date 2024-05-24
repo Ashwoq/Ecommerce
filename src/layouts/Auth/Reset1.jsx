@@ -48,9 +48,9 @@ const Reset = () => {
       <div className="flex items-center justify-center w-screen h-screen overflow-hidden cursor-default bg-gradient-to-r from-gray-100 to-gray-300 ">
         <div
           className="flex items-center justify-center rounded-3xl
-      w-[57%] h-[70%]"
+      xs:w-[85%] lg:w-[57%] h-[70%]"
         >
-          <div className="w-[48%] rounded-3xl backdrop-blur-xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] ">
+          <div className="xs:w-full lg:w-[48%] rounded-3xl backdrop-blur-xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] ">
             <div className="flex flex-col items-center justify-center w-full h-full p-8 rounded-3xl ">
               <div className="flex flex-col items-center justify-center gap-1 mb-5">
                 <div className="text-2xl font-bold ">RESET</div>
@@ -90,7 +90,7 @@ const Reset = () => {
                     validationMsg === "Invalid email id."
                       ? "text-red-500"
                       : "text-black"
-                  }   absolute lg:mt-[0.8rem] xs:mt-[1.3rem] ml-[.9rem]`}
+                  }   absolute lg:mt-[0.8rem] xs:mt-[.3rem] ml-[.9rem]`}
                 >
                   <UserRound className="scale-75" />
                 </div>

@@ -21,8 +21,8 @@ import { useNavigate } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 
 const CheckOutForm = () => {
-  const stripe = useStripe();
-  const elements = useElements();
+  // const stripe = useStripe();
+  // const elements = useElements();
   const location = useNavigate();
 
   const [message, setMessage] = useState(null);
@@ -37,19 +37,19 @@ const CheckOutForm = () => {
   const cartTotalAmount = useSelector(selectCartTotalAmount);
   const shippingAddress = useSelector(selectShippingAddress);
 
-  useEffect(() => {
-    if (!stripe) {
-      return;
-    }
+  // useEffect(() => {
+  //   // if (!stripe) {
+  //   //   return;
+  //   // }
 
-    const clientSecret = new URLSearchParams(window.location.search).get(
-      "payment_intent_client_secret"
-    );
+  //   const clientSecret = new URLSearchParams(window.location.search).get(
+  //     "payment_intent_client_secret"
+  //   );
 
-    if (!clientSecret) {
-      return;
-    }
-  }, [stripe]);
+  //   if (!clientSecret) {
+  //     return;
+  //   }
+  // }, [stripe]);
 
   const saveOrder = () => {
     const today = new Date();
@@ -82,41 +82,41 @@ const CheckOutForm = () => {
     e.preventDefault();
     setMessage(null);
 
-    if (paymentMethod === "stripe") {
-      if (!stripe || !elements) {
-        return;
-      }
-      setIsLoading(true);
+    // if (paymentMethod === "stripe") {
+    //   if (!stripe || !elements) {
+    //     return;
+    //   }
+    //   setIsLoading(true);
 
-      try {
-        const result = await stripe.confirmPayment({
-          elements,
-          confirmParams: {
-            return_url: "http://localhost:3001/checkout-success",
-          },
-          redirect: "if_required",
-        });
+    //   try {
+    //     const result = await stripe.confirmPayment({
+    //       elements,
+    //       confirmParams: {
+    //         return_url: "http://localhost:3001/checkout-success",
+    //       },
+    //       redirect: "if_required",
+    //     });
 
-        if (result.error) {
-          toast.error(result.error.message);
-          setMessage(result.error.message);
-        } else if (
-          result.paymentIntent &&
-          result.paymentIntent.status === "succeeded"
-        ) {
-          setIsLoading(false);
-          toast.success("Payment successful");
-          saveOrder();
-        }
-      } catch (error) {
-        toast.error("An unexpected error occurred");
-        setMessage("An unexpected error occurred");
-      } finally {
-        setIsLoading(false);
-      }
-    } else {
-      saveOrder();
-    }
+    //     if (result.error) {
+    //       toast.error(result.error.message);
+    //       setMessage(result.error.message);
+    //     } else if (
+    //       result.paymentIntent &&
+    //       result.paymentIntent.status === "succeeded"
+    //     ) {
+    //       setIsLoading(false);
+    //       toast.success("Payment successful");
+    //       saveOrder();
+    //     }
+    //   } catch (error) {
+    //     toast.error("An unexpected error occurred");
+    //     setMessage("An unexpected error occurred");
+    //   } finally {
+    //     setIsLoading(false);
+    //   }
+    // } else {
+    saveOrder();
+    // }
   };
 
   return (
@@ -141,6 +141,7 @@ const CheckOutForm = () => {
                   className="w-4 h-4 mr-2"
                   name="paymentMethod"
                   value="stripe"
+                  disabled
                   checked={paymentMethod === "stripe"}
                   onChange={(e) => setPaymentMethod(e.target.value)}
                 />
@@ -161,11 +162,11 @@ const CheckOutForm = () => {
                 Cash on Delivery (COD)
               </div>
             </div>
-            {paymentMethod === "stripe" && (
+            {/* {paymentMethod === "stripe" && (
               <PaymentElement id="payment-element" />
-            )}
+            )} */}
             <div className="flex justify-between">
-              {paymentMethod === "stripe" && (
+              {/* {paymentMethod === "stripe" && (
                 <button
                   disabled={isLoading || !stripe || !elements}
                   id="submit"
@@ -175,7 +176,7 @@ const CheckOutForm = () => {
                     {isLoading ? <Loader2 /> : "Pay now"}
                   </span>
                 </button>
-              )}
+              )} */}
               {paymentMethod === "cod" && (
                 <button
                   type="submit"

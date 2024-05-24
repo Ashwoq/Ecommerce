@@ -65,7 +65,7 @@ const Signup = () => {
         <div
           className="flex items-center justify-center rounded-3xl
       shadow-[0_8px_30px_rgb(0,0,0,0.15)]  backdrop-blur-sm bg-white/30
-      w-[57%] h-[70%]"
+     xs:w-[90%] lg:w-[57%] h-[70%]"
         >
           <div
             className="lg:w-[45%] xs:w-full h-[85%]
@@ -99,7 +99,7 @@ const Signup = () => {
                 />
                 <div
                   className="
-               absolute lg:mt-[.75rem] xs:mt-[1.3rem] ml-[.9rem]"
+               absolute lg:mt-[.75rem] xs:mt-[.4rem] ml-[.9rem]"
                 >
                   <UserRound className="scale-75" />
                 </div>
@@ -113,7 +113,7 @@ const Signup = () => {
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <div
-                  className="absolute xs:left-[10rem] lg:left-[22rem] scale-75 cursor-pointer lg:mt-[4.4rem] xs:mt-[5.4rem]
+                  className="absolute xs:left-[17rem] lg:left-[22rem] scale-75 cursor-pointer lg:mt-[4.4rem] xs:mt-[3.4rem]
                   "
                 >
                   {showPassword ? (
@@ -124,7 +124,7 @@ const Signup = () => {
                 </div>
                 <div
                   className=" flex
-               absolute lg:mt-[4.4rem] xs:mt-[5.4rem] ml-[.9rem]"
+               absolute lg:mt-[4.4rem] xs:mt-[3.4rem] ml-[.9rem]"
                 >
                   <Lock className="scale-75" />
                 </div>
@@ -138,7 +138,7 @@ const Signup = () => {
                   onChange={(e) => setCPassword(e.target.value)}
                 />
                 <div
-                  className="absolute xs:left-[10rem] lg:left-[22rem] scale-75 cursor-pointer lg:mt-[8.2rem] xs:mt-[5.4rem]
+                  className="absolute xs:left-[17rem] lg:left-[22rem] scale-75 cursor-pointer lg:mt-[8.2rem] xs:mt-[6.4rem]
                   "
                 >
                   {showCPassword ? (
@@ -149,7 +149,7 @@ const Signup = () => {
                 </div>
                 <div
                   className=" flex
-               absolute lg:mt-[8.2rem] xs:mt-[5.4rem] ml-[.9rem]"
+               absolute lg:mt-[8.2rem] xs:mt-[6.4rem] ml-[.9rem]"
                 >
                   <Lock className="scale-75" />
                 </div>

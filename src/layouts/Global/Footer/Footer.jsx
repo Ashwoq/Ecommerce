@@ -238,15 +238,18 @@ const Footer = () => {
 
   return (
     <div className="bg-gray-100 border-t-2 border-gray-200 cursor-default">
-      <div className="flex flex-wrap justify-around p-6 py-10 ">
+      <div className="flex xs:py-5 lg:py-10 xs:justify-between lg:justify-around xs:flex-row lg:p-6 lg:flex-wrap xs:p-1">
         {footerData.map(
           (item, index) =>
             item.communication !== "Follow Us" &&
             item.category !== "copyrights" && (
-              <div key={index} className="p-4 min-w-[220px]">
+              <div
+                key={index}
+                className="xs:p-1 lg:p-4 lg:min-w-[220px] xs:min-w-max "
+              >
                 {item.category && (
-                  <div>
-                    <div className="mb-4 text-xl font-bold">
+                  <div className="">
+                    <div className="font-bold lg:mb-4 xs:mb-1 xs:text-xs lg:text-xl">
                       {item.category}
                     </div>
                     {item.subcategories && (
@@ -254,7 +257,7 @@ const Footer = () => {
                         {item.subcategories.map((subItem, subIndex) => (
                           <li
                             key={subIndex}
-                            className="cursor-not-allowed text-sm  hover:text-gray-500 hover:scale-[1.02] transition-all"
+                            className="cursor-not-allowed xs:text-[9px] lg:text-sm  hover:text-gray-500 hover:scale-[1.02] transition-all"
                           >
                             {subItem}
                           </li>
@@ -267,11 +270,11 @@ const Footer = () => {
             )
         )}
         {followUsSection && (
-          <div className="p-4 min-w-[220px]">
-            <div className="mb-2 text-lg font-bold">
+          <div className="p-4 xs:hidden lg:block xs:min-w-[100px] lg:min-w-[220px] ">
+            <div className="mb-2 font-bold xs:text-sm lg:text-lg">
               {followUsSection.communication}
             </div>
-            <div className="flex space-x-4">
+            <div className="flex xs:space-x-2 lg:space-x-4">
               {followUsSection.communicationLinks.map((subItem, subIndex) => (
                 <a
                   key={subIndex}
@@ -283,7 +286,7 @@ const Footer = () => {
                   <img
                     src={subItem.comImgSVG}
                     alt={`icon-${subIndex}`}
-                    className="w-5 h-5 "
+                    className="w-5 h-5"
                   />
                 </a>
               ))}
@@ -296,7 +299,9 @@ const Footer = () => {
           .filter((item) => item.hasOwnProperty("copyrightsDetails"))
           .map((item, index) => (
             <div key={index}>
-              <div className="text-sm">{item.copyrightsDetails}</div>
+              <div className="xs:text-xs lg:text-sm">
+                {item.copyrightsDetails}
+              </div>
             </div>
           ))}
       </div>

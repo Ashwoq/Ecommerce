@@ -20,7 +20,6 @@ const calculateOrderAmount = (items) => {
     return array.push(cartItemAmount);
   });
   const totalAmount = array.reduce((a, b) => a + b, 0);
-
   return totalAmount * 100;
 };
 

@@ -5,9 +5,7 @@ To run this project
 - npm run frontend
 - npm run backend
 
-To get the admin previledge
-- username : ashwoq00786@gmail.com
-- password : ashwoq00786@gmail.com
+For Admin Dashboard user should have admin mail id
 
 Hosted Link : https://e-commerce-ashwoq.firebaseapp.com/
 Note : Need to do some changes ...
